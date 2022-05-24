@@ -7,17 +7,17 @@ I wrote this because the configuration tool that shipped with the
 mouse was only available (in binary form) for Microsoft Windows.
 
 ```
-	$ evofox-phantom -h
-	usage: evofox-phantom [-h] [--vid VID] [--pid PID]
-						  [-l [{off,static,slow,fast}]]
+$ evofox-phantom -h
+usage: evofox-phantom [-h] [--vid VID] [--pid PID]
+					  [-l [{off,static,slow,fast}]]
 
-	Toggle LED modes in Amkette Evofox Gaming Mouse
+Toggle LED modes in Amkette Evofox Gaming Mouse
 
-	options:
-	  -h, --help            show this help message and exit
-	  --vid VID             Vendor ID; lsusb(8)
-	  --pid PID             Product ID; lsusb(8)
-	  -l [{off,static,slow,fast}], --led [{off,static,slow,fast}]
+options:
+  -h, --help            show this help message and exit
+  --vid VID             Vendor ID; lsusb(8)
+  --pid PID             Product ID; lsusb(8)
+  -l [{off,static,slow,fast}], --led [{off,static,slow,fast}]
 ```
 
 Phantom supports four modes: off, static, slow and fast. This program,
@@ -25,10 +25,24 @@ at present only supports toggling LEDs.
 
 # Install
 
+**Dependencies**: hidapi
+
 ```
-	$ git clone https://github.com/bojle/evofox-phantom.git
-	$ cd evofox-phantom
-	$ make install
+$ sudo pip install hidpi
+```
+
+or alternatively on arch linux systems, 
+
+```
+$ sudo pacman -S python-hidapi
+```
+
+Install 
+
+```
+$ git clone https://github.com/bojle/evofox-phantom.git
+$ cd evofox-phantom
+$ make install
 ```
 
 # TODO
