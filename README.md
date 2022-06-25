@@ -23,9 +23,7 @@ options:
 Phantom supports four modes: off, static, slow and fast. This program,
 at present only supports toggling LEDs.
 
-Here's a demo:
-
-![](out.mkv)
+Here's a demo [video](https://youtu.be/1RXHDZS5G4I):
 
 # Install
 
