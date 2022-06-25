@@ -23,6 +23,10 @@ options:
 Phantom supports four modes: off, static, slow and fast. This program,
 at present only supports toggling LEDs.
 
+Here's a demo:
+
+![](out.mkv)
+
 # Install
 
 **Dependencies**: hidapi
